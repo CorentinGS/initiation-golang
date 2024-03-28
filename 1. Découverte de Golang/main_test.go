@@ -28,6 +28,16 @@ func TestDiv(t *testing.T) {
 	if result != 2 {
 		t.Errorf("Expected 2, but got %d", result)
 	}
+
+	result = div(7, 3)
+	if result != 2 {
+		t.Errorf("Expected 2, but got %d", result)
+	}
+	
+	result = div(7, 0)
+	if result != 0 {
+		t.Errorf("Expected 0, but got %d", result)
+	}
 }
 
 func TestMod(t *testing.T) {
